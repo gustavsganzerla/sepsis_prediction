@@ -1,0 +1,109 @@
+{% extends 'base.html'%}
+{% block content %}
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 2px solid #ddd; /* Add a border around the table */
+    }
+
+    th, td {
+        padding: 12px; /* Increase padding for better spacing */
+        text-align: left;
+        border-bottom: 1px solid #ddd; /* Add bottom border to cells */
+    }
+
+    th {
+        background-color: #f2f2f2;
+        border-top: 2px solid #ddd; /* Add top border to header cells */
+    }
+
+    tr:hover {
+        background-color: #f5f5f5; /* Add a subtle hover effect */
+    }
+</style>
+
+
+<table>
+
+    <thead>
+ 
+        <tr>
+ 
+            <th>Biomarkers</th>
+ 
+            <th>Accuracy</th>
+ 
+            <th>AUC</th>
+ 
+            <th>Action</th>  
+ 
+        </tr>
+ 
+    </thead>
+ 
+  
+ 
+ <tbody>
+ 
+ <tr>
+    <td>
+        <ul>
+            <li>IFNg, IL-10, TNF-a, G-CSF</li>
+    </td>
+ 
+    <td>84%</td>
+ 
+    <td>0.91</td>
+ 
+    <td>
+        <a href="{% url 'predictor:model1' %}">
+            Execute <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </td>
+ </tr>
+ 
+  
+ 
+ <tr>
+    <td>
+        <ul>
+            <li>IL6, IL4, IL1b, TNF-a, G-CSF</li>
+    </td>
+ 
+    <td>84%</td>
+ 
+    <td>0.91</td>
+ 
+    <td>
+        <a href="{% url 'predictor:model2' %}">
+            Execute <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </td>
+ </tr>
+
+ <tr>
+    <td>
+        <ul>
+            <li>IL6, IL2, IL17A, IL1b, G-CSF</li>
+    </td>
+ 
+    <td>84%</td>
+ 
+    <td>0.90</td>
+ 
+    <td>
+        <a href="{% url 'predictor:model3' %}">
+            Execute <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </td>
+ </tr>
+ 
+  
+ 
+  
+ 
+ </tbody>
+ 
+ </table>
+{% endblock%} 
