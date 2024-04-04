@@ -26,7 +26,8 @@ SECRET_KEY = "8f(f=nicsbsheei8l$d_2s0ue72pqu%en%d(*r6b@xls_!h+u&"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['172-105-28-225.ip.linodeusercontent.com', 'localhost', '172.105.28.225', '127.0.0.1']
+ALLOWED_HOSTS = ['172-105-28-225.ip.linodeusercontent.com', 'localhost', 
+                 '172.105.28.225', '127.0.0.1', 'edtool.mici.dal.ca']
 
 
 # Application definition
